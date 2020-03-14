@@ -1,14 +1,35 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: limegreen;
+}
+
+.digits {
+  border: 1px solid greenyellow;
+  background-color: green;
 }
 
 .digit {
   display: inline-block;
   font-size: 80px;
+  border: 1px solid limegreen;
+  padding: 4px;
+  margin-left: -5px;
 }
 
 .redDigit {
   color: red;
+}
+
+.controls button {
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  filter: invert(1);
+  transition: .7s;
 }
